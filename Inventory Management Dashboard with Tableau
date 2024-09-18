@@ -1,0 +1,10 @@
+import pandas as pd
+
+# Load inventory data
+inventory_data = pd.read_csv('inventory_data.csv')
+
+# Data preprocessing
+inventory_data['Stock Turnover Rate'] = inventory_data['Sales'] / inventory_data['Stock']
+
+# Visualization in Tableau
+# Upload the inventory_data to Tableau and create dashboards to monitor inventory levels and stock turnover rates
