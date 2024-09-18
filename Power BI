@@ -1,0 +1,17 @@
+# This is a conceptual example. Actual implementation will be done in Power BI Desktop.
+
+import pandas as pd
+
+# Load sales data
+sales_data = pd.read_csv('sales_data.csv')
+
+# Data preprocessing
+sales_data['Date'] = pd.to_datetime(sales_data['Date'])
+sales_data['Year'] = sales_data['Date'].dt.year
+sales_data['Month'] = sales_data['Date'].dt.month
+
+# Aggregate data
+monthly_sales = sales_data.groupby(['Year', 'Month']).agg({'Revenue': 'sum', 'Profit': 'sum'}).reset_index()
+
+# Visualization in Power BI
+# Create line charts for Revenue and Profit trends over time
