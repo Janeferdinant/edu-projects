@@ -1,0 +1,49 @@
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import MinMaxScaler
+from keras.models import Sequential
+from keras.layers import LSTM, Dense
+
+# Load stock market data
+stock_data = pd.read_csv('stock_data.csv')
+
+# Data preprocessing
+scaler = MinMaxScaler(feature_range=(0, 1))
+scaled_data = scaler.fit_transform(stock_data['Close'].values.reshape(-1, 1))
+
+# Create training and testing datasets
+train_size = int(len(scaled_data) * 0.8)
+train_data = scaled_data[:train_size]
+test_data = scaled_data[train_size:]
+
+# Create sequences
+def create_sequences(data, seq_length):
+    sequences = []
+    labels = []
+    for i in range(len(data) - seq_length):
+        sequences.append(data[i:i+seq_length])
+        labels.append(data[i+seq_length])
+    return np.array(sequences), np.array(labels)
+
+seq_length = 60
+X_train, y_train = create_sequences(train_data, seq_length)
+X_test, y_test = create_sequences(test_data, seq_length)
+
+# Build LSTM model
+model = Sequential()
+model.add(LSTM(units=50, return_sequences=True, input_shape=(seq_length, 1)))
+model.add(LSTM(units=50))
+model.add(Dense(units=1))
+
+model.compile(optimizer='adam', loss='mean_squared_error')
+
+# Train the model
+model.fit(X_train, y_train, epochs=10, batch_size=32)
+
+# Predictions
+predictions = model.predict(X_test)
+predictions = scaler.inverse_transform(predictions)
+
+# Evaluation
+mse = mean_squared_error(y_test, predictions)
+print(f'Mean Squared Error: {mse}')
