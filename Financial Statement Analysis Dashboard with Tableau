@@ -1,0 +1,10 @@
+import pandas as pd
+
+# Load financial data
+financial_data = pd.read_csv('financial_data.csv')
+
+# Data preprocessing
+financial_data['Profit Margin'] = financial_data['Profit'] / financial_data['Revenue']
+
+# Visualization in Tableau
+# Upload the financial_data to Tableau and create dashboards to visualize revenue, expenses, and profitability metrics
