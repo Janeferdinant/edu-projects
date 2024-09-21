@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Curriculum Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Curriculum Projects</h1>
+
+    <h2>Core Topics</h2>
+
+    <h3>Fundamentals of AI</h3>
+    <ul>
+        <li><a href="https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/02.echo-bot">AI Chatbot</a></li>
+    </ul>
+
+    <h3>Machine Learning</h3>
+    <ul>
+        <li><a href="https://github.com/scikit-learn/scikit-learn/tree/main/examples/classification">Scikit-learn Classification</a></li>
+        <li><a href="https://github.com/tensorflow/models/tree/master/tutorials/image/mnist">TensorFlow Neural Network</a></li>
+        <li><a href="https://github.com/keras-team/keras/blob/master/examples/cifar10_cnn.py">CNN Image Classification</a></li>
+        <li><a href="https://github.com/dennybritz/reinforcement-learning/tree/master/DQN">Q-learning</a></li>
+    </ul>
+
+    <h3>Data Science and Big Data Analytics</h3>
+    <ul>
+        <li><a href="https://github.com/rasbt/mlxtend/tree/master/mlxtend/frequent_patterns">Apriori Algorithm</a></li>
+        <li><a href="https://github.com/pandas-dev/pandas">Pandas Data Analysis</a></li>
+        <li><a href="https://github.com/apache/spark">Apache Spark</a></li>
+    </ul>
+
+    <h3>Computer Vision</h3>
+    <ul>
+        <li><a href="https://github.com/opencv/opencv">OpenCV Image Processing</a></li>
+        <li><a href="https://github.com/AlexeyAB/darknet">YOLO Object Detection</a></li>
+        <li><a href="https://github.com/opencv/opencv/tree/master/samples/python">OpenCV Motion Detection</a></li>
+    </ul>
+
+    <h3>Natural Language Processing (NLP)</h3>
+    <ul>
+        <li><a href="https://github.com/nltk/nltk">NLTK Text Classification</a></li>
+        <li><a href="https://github.com/cjhutto/vaderSentiment">VADER Sentiment Analysis</a></li>
+        <li><a href="https://github.com/openai/gpt-3">GPT-3 Text Generation</a></li>
+    </ul>
+
+    <h3>Robotics</h3>
+    <ul>
+        <li><a href="https://github.com/ros-industrial/abb">Robotic Arm Simulation</a></li>
+        <li><a href="https://github.com/justinhj/astar-algorithm-cpp">A* Path Planning</a></li>
+        <li><a href="https://github.com/udacity/self-driving-car-sim">Self-Driving Car</a></li>
+    </ul>
+
+    <h2>Elective Courses</h2>
+
+    <h3>Advanced Machine Learning</h3>
+    <ul>
+        <li><a href="https://github.com/eriklindernoren/PyTorch-GAN">GANs</a></li>
+        <li><a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix">Transfer Learning</a></li>
+        <li><a href="https://github.com/marcotcr/lime">LIME</a></li>
+    </ul>
+
+    <h3>AI in Healthcare</h3>
+    <ul>
+        <li><a href="https://github.com/MIC-DKFZ/nnUNet">Medical Image Segmentation</a></li>
+        <li><a href="https://github.com/HealthCatalyst/healthcareai-py">Predictive Modeling</a></li>
+        <li><a href="https://github.com/chemprop/chemprop">Drug Discovery</a></li>
+    </ul>
+
+    <h3>AI Ethics and Governance</h3>
+    <ul>
+        <li><a href="https://github.com/AI-Global/ai-ethics">AI Ethics</a></li>
+        <li><a href="https://github.com/opendp/smartnoise-sdk">Differential Privacy</a></li>
+        <li><a href="https://github.com/AI-Global/ai-policy">AI Policy</a></li>
+    </ul>
+
+    <h3>Human-Computer Interaction</h3>
+    <ul>
+        <li><a href="https://github.com/material-components/material-components-web">Material Design</a></li>
+        <li><a href="https://github.com/MycroftAI/mycroft-core">Voice Assistant</a></li>
+        <li><a href="https://github.com/usabilityhub/UsabilityHub">Usability Testing</a></li>
+    </ul>
+
